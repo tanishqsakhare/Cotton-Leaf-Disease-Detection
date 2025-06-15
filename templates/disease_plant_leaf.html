@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+        <title>Skin Diagnosis and Brain prognosis</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+            .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NeuroDerm Analytica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <!-- <a class="nav-link" href={{url_for('home')}}>Home </a> -->
+              <a class="nav-link" href="/templates/index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href={{url_for('information')}}>Information </a> -->
+              <a class="nav-link" href="/templates/information.html">Information </a>
+            </li>
+            <li class="nav-item active">
+              <!-- <a class="nav-link" href={{url_for('help')}}>Help</a> -->
+              <a class="nav-link" href="/templates/help.html">Help</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container my-12">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px; margin-top: 50px;">
+                <span class="border border-primary">
+                    <img style="width:25rem; height:30rem;" src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                   
+
+
+                </span>
+            </div>
+
+            <div class="col-sm mt-5">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+
+                <h2>Disease Name/रोग का नाम: </span></h2>
+                <h4 style="line-height: 100%;">The disease may occur in all stages but more severe when plants are 45-60 days old. Small, plate to brown, irregular or round spots, measuring 0.5 to 6mm diameter, may appear on the leaves. Each spot has a central lesion surrounded by concentric rings. Several spots coalesce together to form blighted areas.</h4><br><h4>रोग सभी अवस्थाओं में हो सकता है लेकिन पौधे के 45-60 दिन पुराने होने पर अधिक गंभीर हो जाता है। छोटे, प्लेट से भूरे, अनियमित या गोल धब्बे, 0.5 से 6 मिमी व्यास के, पत्तियों पर दिखाई दे सकते हैं। प्रत्येक स्थान में एक केंद्रीय घाव होता है जो संकेंद्रित वलयों से घिरा होता है। कई धब्बे आपस में मिलकर झुलसा क्षेत्र बनाते हैं।</h4>
+                <hr class="w-100 mx-auto ">
+            </div>
+        </div>
+
+
+        <h1> Solution for Disease / रोग का उपचार: </h1>
+        <p><strong><h3>Use any one Systemic Chemicals, which contain</h3></strong></p<br>
+        <p><h5>Sulphuric Acid/ Carboxin/ Oxycarboxin Spray Streptomycin Sulphate 100g and Oxychlride 500g/ACR.</h5></p>
+        <h4>Steps:</h4><h5><ul>
+            <li>Remove and destroy the infected plant residues.</li>
+            <li>Spray Mancozeb or Copper oxychloride at 2kg/ha at the intimation of the disease.</li>
+            <li>Two to three sprays may be given at 15 days interval.</li>
+        </ul></h5>
+        <p><strong><h3>किसी एक प्रणालीगत रसायन का उपयोग करें, जिसमें शामिल हो</h3></strong></p>
+        <p><h5>सल्फ्यूरिक एसिड / कार्बोक्सिन / ऑक्सीकारबॉक्सिन स्ट्रेप्टोमाइसिन सल्फेट 100 ग्राम और ऑक्सीक्लिराइड 500 ग्राम/एसीआर का छिड़काव करें</h5></p>
+        <h4>Steps:</h4><h5><ul>
+            <li>संक्रमित पौधों के अवशेषों को हटाकर नष्ट कर दें.</li>
+            <li>रोग की सूचना पर मैंकोजेब या कॉपर ऑक्सीक्लोराइड 2 किग्रा/हेक्टेयर का छिड़काव करें</li>
+            <li>दो से तीन छिड़काव 15 दिन के अंतराल पर कर सकते हैं।</li>
+        </ul></h5>
+    </div>
+
+
+<br><br><br><br><hr>
+<h3 style="color:red;"><strong>Disclaimer :</strong>All Chemicals and their Doses are not suggested by any Expert. All the Product and doses are reffered by Google.</h3>
+<h3 style="color:red;"><strong>अस्वीकरण :</strong>जितने भी प्रोडक्ट और उसके दोसेस दिए है वो सब किसी भी एक्सपर्ट्स ने सुझाए नहीं  है| सभी उत्पाद और खुराक Google द्वारा रेफर किए जाते हैं।</h3>
+<hr>
+    <section>
+
+        <div class="container">
+            <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                class="text-center my-3 content-h1">
+                Recommended Products | सुझाए गए उत्पाद</h1>
+        </div>
+
+        <div class="container">
+
+
+            <div class="card-columns">
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;  width:20rem; height:30rem;" class="img-fluid" src="{{ url_for('static', filename='images/Disease plant and leaf/actara.png') }}" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;  width:20rem; height:30rem;" class="img-fluid" src="{{ url_for('static', filename='images/Disease plant and leaf/confidor.png') }}" alt="">
+                        <h3 class="card-text">Dose: 25-40 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;  width:20rem; height:30rem;" class="img-fluid" src="{{ url_for('static', filename='images/Disease plant and leaf/panama.png') }}" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+           
+        </div>
+
+    </section>
+
+</body>
+
+</html>

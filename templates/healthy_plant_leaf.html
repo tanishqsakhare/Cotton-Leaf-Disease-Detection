@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+        <title>Skin Diagnosis and Brain prognosis</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NeuroDerm Analytica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <!-- <a class="nav-link" href={{url_for('home')}}>Home </a> -->
+              <a class="nav-link" href="/templates/index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href={{url_for('information')}}>Information </a> -->
+              <a class="nav-link" href="/templates/information.html">Information </a>
+            </li>
+            <li class="nav-item active">
+              <!-- <a class="nav-link" href={{url_for('help')}}>Help</a> -->
+              <a class="nav-link" href="/templates/help.html">Help</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm " style="margin-bottom: 23px; margin-top: 50px;">
+                <span class="border border-primary">
+                    <img style="width:25rem; height:30rem;" src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm mt-5">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(128, 255, 0); color: rgb(0, 0, 0);"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+
+                    <h5>
+                        <b>There is no disease on the cotton plant.</b></br>
+                        Although the chemical fertilizer has fallen on the leaves of the tree, the leaves are burnt, but
+                        there is no need to worry.</br></br>
+                        <b>कपास के पौधे पर कोई रोग नहीं लगता है।</b></br>
+                        हालांकि रासायनिक खाद पेड़ के पत्तों पर गिर गई है, पत्ते जल गए हैं, लेकिन
+                        चिंता करने की कोई बात नहीं है।
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
